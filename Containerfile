@@ -5,3 +5,4 @@ RUN dnf install -y \
   tmux \
   && dnf clean all
 
+COPY motd /etc/motd
