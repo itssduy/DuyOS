@@ -1,0 +1,10 @@
+NAME="DuyOS"
+PRETTY_NAME="DuyOS (Arch-based, Hyprland + Caelestia)"
+ID=duyos
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;125;211;252"
+HOME_URL="https://github.com/itssduy/DuyOS"
+DOCUMENTATION_URL="https://github.com/itssduy/DuyOS#readme"
+BUG_REPORT_URL="https://github.com/itssduy/DuyOS/issues"
+LOGO=archlinux-logo
