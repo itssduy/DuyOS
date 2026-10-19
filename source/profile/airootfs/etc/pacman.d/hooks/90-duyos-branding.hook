@@ -1,0 +1,13 @@
+# remove from airootfs!
+# Build-time only (the line above makes releng's zzzz99 hook delete this file at
+# the end of the build, so it does not run on a system later installed from the ISO).
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = filesystem
+
+[Action]
+Description = Applying DuyOS branding (os-release, issue)...
+When = PostTransaction
+Exec = /usr/local/bin/duyos-apply-branding

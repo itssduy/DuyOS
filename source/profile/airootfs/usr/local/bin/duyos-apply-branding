@@ -1,0 +1,7 @@
+#!/bin/sh
+# Replaces Arch's identity files with DuyOS's. Run by a pacman hook during the ISO
+# build, because /usr/lib/os-release and /etc/issue belong to the "filesystem"
+# package and cannot simply be overlaid from airootfs (pacman would report conflicts).
+set -e
+install -m 0644 /usr/share/duyos/os-release /usr/lib/os-release
+install -m 0644 /usr/share/duyos/issue /etc/issue
