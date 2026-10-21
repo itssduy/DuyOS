@@ -1,0 +1,3 @@
+# DuyOS live session: members of wheel may use sudo without a password.
+# (Only appropriate for a live ISO — the password is public: "duyos".)
+%wheel ALL=(ALL:ALL) NOPASSWD: ALL
