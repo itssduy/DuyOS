@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Prints DuyOS system information and the most useful keybindings.
+fastfetch 2>/dev/null || cat /etc/os-release
+cat <<'HELP'
+
+  DuyOS keybindings (Caelestia defaults, plus DuyOS additions)
+  ─────────────────────────────────────────────────────────────
+  Super                 app launcher          Super + T        terminal (foot)
+  Super + W             browser (Firefox)     Super + E        files (Thunar)
+  Super + Q             close window          Super + F        fullscreen
+  Super + 1..9          switch workspace      Super + Alt + 1..9  move window
+  Super + N             sidebar               Super + K        show all panels
+  Super + L             lock                  Ctrl + Alt + Del session menu
+  Super + Shift + S     screenshot (region)   Super + /        this help (DuyOS)
+  Ctrl + Shift + Esc    system monitor        Super + Shift + B  btop (DuyOS)
+
+  Live user: duyos / duyos   ·   Logs: ~/.local/state/duyos/
+HELP

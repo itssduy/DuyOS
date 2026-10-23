@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Runs once per user when Hyprland starts (called from ~/.config/caelestia/hypr-user.lua):
+# shows a welcome notification with the most important keybindings.
+state="${XDG_STATE_HOME:-$HOME/.local/state}/duyos"
+mkdir -p "$state"
+marker="$state/firstlogin-done"
+[[ -e "$marker" ]] && exit 0
+
+sleep 3  # let the Caelestia shell (which displays notifications) start
+timeout 5 notify-send -a DuyOS "Welcome to DuyOS" \
+    "Super: launcher · Super+T: terminal · Super+/: help" && touch "$marker"

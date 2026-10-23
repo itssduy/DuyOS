@@ -19,6 +19,8 @@ airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86,arm64' '-b' '1M' '-Xdict-
 
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
+  ["/etc/gshadow"]="0:0:400"
+  ["/etc/sudoers.d/10-duyos-live"]="0:0:440"
   ["/root"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/root/.gnupg"]="0:0:700"
@@ -26,4 +28,7 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/duyos-apply-branding"]="0:0:755"
+  ["/usr/local/bin/duyos-session"]="0:0:755"
+  ["/usr/local/bin/duyos-firstlogin"]="0:0:755"
+  ["/usr/local/bin/duyos-info"]="0:0:755"
 )
