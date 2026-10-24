@@ -41,7 +41,6 @@ hyperv
 intel-ucode
 irssi
 iw
-iwd
 jfsutils
 kitty-terminfo
 kmscon-terminfo
@@ -126,3 +125,66 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
+
+# ---------------------------------------------------------------------------
+# DuyOS additions (everything above is the stock archiso releng package list,
+# minus iwd: DuyOS uses NetworkManager, which Caelestia requires)
+# ---------------------------------------------------------------------------
+
+# Desktop: Hyprland compositor + Caelestia shell (caelestia-* are AUR packages,
+# built by scripts/build-aur.sh into the local [duyos-aur] repo)
+caelestia-shell
+caelestia-cli
+hyprland
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+polkit-gnome
+gnome-keyring
+mesa
+vulkan-virtio
+vulkan-swrast
+adwaita-cursors
+papirus-icon-theme
+ttf-jetbrains-mono-nerd
+noto-fonts
+noto-fonts-emoji
+libnotify
+
+# Audio / network / power (used by Caelestia's widgets)
+pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+pavucontrol
+networkmanager
+network-manager-applet
+power-profiles-daemon
+bluez
+bluez-utils
+geoclue
+gammastep
+
+# Useful software shipped with DuyOS (see README "Included software")
+firefox
+foot
+thunar
+btop
+fastfetch
+micro
+git
+fish
+starship
+eza
+zoxide
+direnv
+trash-cli
+cliphist
+wl-clipboard
+grim
+slurp
+
+# System-level: compressed RAM swap
+zram-generator
+
+# VM guest integration (clipboard, resize, shutdown from host)
+spice-vdagent

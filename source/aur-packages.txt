@@ -1,0 +1,4 @@
+# AUR packages built into the local [duyos-aur] repo (their AUR dependencies are
+# resolved and built automatically). Official-repo packages go in profile/packages.x86_64.
+caelestia-shell
+caelestia-cli
