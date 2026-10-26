@@ -14,8 +14,14 @@ bootmodes=('bios.syslinux'
 arch="x86_64"
 pacman_conf="pacman.conf"
 airootfs_image_type="squashfs"
-airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86,arm64' '-b' '1M' '-Xdict-size' '1M')
+# zstd instead of releng's xz: ~10% bigger ISO, but the live system boots and
+# launches apps noticeably faster because decompression is much cheaper.
+airootfs_image_tool_options=('-comp' 'zstd' '-Xcompression-level' '15' '-b' '1M')
 
+# DuyOS system-level modification #3: kernel command line.
+#   zswap.enabled=0 - zswap would compress pages *before* they reach zram (double work)
+#   quiet loglevel=3 - clean boot instead of a wall of kernel messages
+kernel_params_x86_64="zswap.enabled=0 quiet loglevel=3"
 
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
