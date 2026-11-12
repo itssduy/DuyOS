@@ -15,14 +15,20 @@ goes straight into a Hyprland desktop running the [Caelestia shell](https://gith
 
 ## Why I made it this way
 
-I wanted a distro that actually looks nice and is usable right away, instead of a bare terminal.
+I've been running a very similar setup (Arch with Hyprland and Caelestia) on my own computer for a
+while, so for this project I wanted to turn that into a distro anyone can boot. I wanted it to
+actually look nice and be usable right away, instead of a bare terminal.
 
-I went with **Arch + archiso** because archiso is what Arch itself uses to build its ISO, so I knew
-it's maintained and works. Arch also has the newest versions of Hyprland and the graphics drivers,
-which a Wayland desktop like this needs.
+I went with **Arch + archiso** because I really like how configurable Arch is. You start small and
+add exactly what you want, and that's basically what building a distro is. I also like **pacman**:
+it's fast, simple, and makes it easy to add packages, which made picking the software for DuyOS
+straightforward. archiso is also what Arch itself uses to build its ISO, so I knew it's maintained
+and works. On top of that, Arch has the newest versions of Hyprland and the graphics drivers, which
+a Wayland desktop like this needs.
 
-For the desktop, I picked **Hyprland with Caelestia** because Caelestia already gives you a full,
-good-looking setup (bar, app launcher, notifications, dashboard, lock screen) on top of Hyprland.
+For the desktop, I picked **Hyprland with Caelestia** because it's what I already use and like.
+Caelestia gives you a full, good-looking setup (bar, app launcher, notifications, dashboard, lock
+screen) on top of Hyprland.
 
 I actually started with Fedora bootc first (it's in `old-bootc/`), but switched to archiso because
 it's more of a real "build a distro" tool and gave me more control over the system.
