@@ -127,15 +127,6 @@ I didn't edit Caelestia's own config files. Instead I used its override files
 - turn the blur down so it runs smoother in a VM
 - add two shortcuts: **Super+/** for help and **Super+Shift+B** for btop
 
-### Seeing every change
-The first archiso commits add archiso's original `releng` profile with no changes. At commit
-`ca5dde2` the profile is exactly stock releng. Every commit after that is one of my changes, so you
-can see exactly what I modified compared to stock Arch:
-
-```bash
-git diff ca5dde2 HEAD -- source/profile
-```
-
 ## Project layout
 
 ```
