@@ -6,7 +6,7 @@ modern **Hyprland** Wayland desktop running the **[Caelestia shell](https://gith
 with DuyOS branding, a curated set of applications, and system-level tuning for running smoothly from
 RAM and inside virtual machines.
 
-![DuyOS desktop with the Caelestia launcher open](demo/screenshots/05-launcher.png)
+![DuyOS desktop: Hyprland with the Caelestia shell](demo/screenshots/04-desktop.png)
 
 | | |
 |---|---|
@@ -58,7 +58,7 @@ RAM and inside virtual machines.
 
 | | |
 |---|---|
-| ![Boot menu](demo/screenshots/03-boot-menu-uefi.png) **UEFI boot menu** | ![Desktop](demo/screenshots/04-desktop.png) **Hyprland + Caelestia desktop** |
+| ![Boot menu](demo/screenshots/03-boot-menu-uefi.png) **UEFI boot menu** | ![Launcher](demo/screenshots/05-launcher.png) **Caelestia app launcher** |
 | ![fastfetch](demo/screenshots/09-fastfetch.png) **fastfetch with the DuyOS logo** | ![btop](demo/screenshots/08-btop.png) **btop: user `duyos`, zram swap** |
 
 More screenshots, with captions, are in [`demo/`](demo/README.md).
